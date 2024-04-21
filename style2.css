@@ -1,0 +1,28 @@
+form{
+width:350px;
+padding:20px;
+margin:20px auto;
+box-shadow: 0 0 10px 0 #333;
+border-radius:20px;
+font:14px "Tahoma";
+}
+input[type="text"], input[type="number"]{
+width:230px;
+padding:5px;
+}
+.simpan{
+background: blue;
+color:white;
+border-radius: 20px;
+border:none;
+text-decoration: none;
+padding:10px 20px;
+}
+.batal{
+background: red;
+color:white;
+border-radius: 20px;
+border:none;
+text-decoration: none;
+padding:10px 20px;
+}

@@ -1,0 +1,38 @@
+body{
+font:14px "Tahoma";
+}
+th{
+background: red;
+color:white;
+}
+td{
+background: #eee;
+color:black;
+}
+.edit{
+background: green;
+color:white;
+border-radius: 20px;
+border:none;
+text-decoration: none;
+padding:3px 15px;
+}
+.hapus{
+background: red;
+color:white;
+border-radius: 20px;
+border:none;
+text-decoration: none;
+padding:3px 15px;
+}
+.simpan{
+background: blue;
+color:white;
+border-radius: 20px;
+border:none;
+text-decoration: none;
+padding:10px 20px;
+}
+.edit:hover, .hapus:hover, .simpan:hover{
+background:orange;
+}
