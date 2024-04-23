@@ -40,8 +40,6 @@ while($data=mysqli_fetch_array($result))
 <td align="center" width="80px">
 <a onclick="window.open('nota.php?id=<?=$data['penjualan_id'] ?>','nama window','width=1000,height=500,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=yes,copyhistory=no')" class="btn btn-info mb-1">Nota</a>
 <a href="detail.php?id=<?= $data['penjualan_id']?>" class="edit"></a>
-<a href="delete_transaksi.php?id=<?=$data['penjualan_id'] ?>" 
-	onclick="return confirm('Apakah Anda Yakin data petugas <?= $data['penjualan_id'] ?> akan dihapus?')" class="btn btn-danger">hapus</a>
 </td>
 </tr>
 <?php

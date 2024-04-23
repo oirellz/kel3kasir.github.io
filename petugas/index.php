@@ -47,9 +47,9 @@ while($data=mysqli_fetch_array($result))
 
 <td align="center" width="80px">
 <a href="edit.php?id=<?= $data['petugas_id']
-?>" class="btn btn-info mb-1">Edit</a>
+?>" class="btn btn-info mb-1">Ubah</a>
 <a href="delete.php?id=<?=$data['petugas_id'] ?>" 
-	onclick="return confirm('Apakah Anda Yakin data pengaduan <?= $data['nama_petugas'] ?> akan dihapus?')" class="btn btn-danger">Del</a>
+	onclick="return confirm('Apakah Anda Yakin data pengaduan <?= $data['nama_petugas'] ?> akan dihapus?')" class="btn btn-danger">Hapus</a>
       </tr>
       <?php
 $no++;

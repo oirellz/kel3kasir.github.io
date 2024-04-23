@@ -72,14 +72,14 @@ hr{
           </li>
 
 		  <li class="nav-link">
-            <a href="produk/index.php" target="frame">
+            <a href="produk/index2.php" target="frame">
               <i class='bx bx-bell icon'></i>
               <span class="text nav-text">Produk</span>
             </a>
           </li>
 
           <li class="nav-link">
-            <a href="transaksi/tampil_transaksi.php" target="frame">
+            <a href="transaksimin/tampil_transaksi.php" target="frame">
               <i class='bx bx-pie-chart-alt icon'></i>
               <span class="text nav-text">Transaksi</span>
             </a>
@@ -88,7 +88,7 @@ hr{
           <li class="nav-link">
             <a href="about.php" target="frame">
             <i class='bx bx-info-circle icon'></i>
-              <span class="text nav-text">About</span>
+              <span class="text nav-text">Tentang</span>
             </a>
           </li>
 
@@ -131,7 +131,7 @@ hr{
           <li class="nav-link">
             <a href="about.php" target="frame">
             <i class='bx bx-info-circle icon'></i>
-              <span class="text nav-text">About</span>
+              <span class="text nav-text">Tentang</span>
             </a>
           </li>
 		  <?php } ?>
@@ -144,7 +144,7 @@ hr{
         <li class="">
           <a href="../kelompok3/login.php">
             <i class='bx bx-log-out icon'></i>
-            <span class="text nav-text">Logout</span>
+            <span class="text nav-text">Keluar</span>
           </a>
         </li>
 

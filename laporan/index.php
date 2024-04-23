@@ -82,7 +82,7 @@ $_SESSION['nama']=$id;
 	<br>
 </form><hr>
 <button class="btn-print btn btn-info m-1" type="button" onclick="frames['lap'].print();">
-Print</button>
+Cetak</button>
 <hr>
 <iframe name="lap" frameborder="0" width="100%" height="500px"></iframe>
 

@@ -11,7 +11,6 @@
 <?php
 include "../config.php";
 ?>
-<a href="form.php" class="btn btn-info mb-3">[+] Tambah Data</a>
 <table class="table">
     <thead class="table-primary">
       <tr>
@@ -20,7 +19,6 @@ include "../config.php";
 <th>Nama produk</th>
 <th >Harga</th>
 <th >Stok</th>
-<th >Aksi</th>
       </tr>
     </thead>
     <tbody>
@@ -40,12 +38,7 @@ while($data=mysqli_fetch_array($result))
 <td><?= $data['harga']?></td>
 <td><?= $data['stok'] ?></td>
 
-<td align="center" width="80px">
-  <a href="edit.php?id=<?= $data['produk_id']
-?>" class="btn btn-info mb-1">Ubah</a>
-<a href="delete.php?id=<?= $data['produk_id'] ?>" 
-	onclick="return confirm('Apakah Anda Yakin data pengaduan <?= $data['nama_produk'] ?> akan dihapus?')"  class="btn btn-danger">Hapus</a>
-      </tr>
+</tr>
       <?php
 $no++;
 }

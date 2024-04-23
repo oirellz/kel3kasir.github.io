@@ -41,9 +41,9 @@ while($data=mysqli_fetch_array($result))
 
 <td >
 <a href="edit.php?id=<?= $data['pelanggan_id']
-?>" class="btn btn-info mb-1">Edit</a>
+?>" class="btn btn-info mb-1">Ubah</a>
 <a href="delete.php?id=<?=$data['pelanggan_id'] ?>" 
-	onclick="return confirm('Apakah Anda Yakin data pelanggan <?= $data['nama_pelanggan'] ?> akan dihapus?')" class="btn btn-danger">Del</a>
+	onclick="return confirm('Apakah Anda Yakin data pelanggan <?= $data['nama_pelanggan'] ?> akan dihapus?')" class="btn btn-danger">Hapus</a>
       </tr>
       <?php
 $no++;

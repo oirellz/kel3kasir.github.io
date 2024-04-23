@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2024 at 07:28 AM
+-- Generation Time: Apr 23, 2024 at 03:42 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,15 +40,11 @@ CREATE TABLE `detail_penjualan` (
 --
 
 INSERT INTO `detail_penjualan` (`detail_id`, `penjualan_id`, `kode`, `jumlah_produk`, `subtotal`) VALUES
-(381, 258, 'BPC003', 1, 15000.00),
-(382, 258, 'KPC006', 1, 60000.00),
-(383, 258, 'TPC010', 1, 20000.00),
-(384, 258, 'APC005', 1, 20000.00),
-(385, 258, 'GKPC008', 1, 15000.00),
-(386, 258, 'MPC009', 1, 20000.00),
-(388, 258, 'APC005', 1, 20000.00),
-(394, 258, 'CPC001', 1, 5000.00),
-(395, 258, 'CPC001', 1, 5000.00);
+(400, 267, 'JPC007', 1, 15000.00),
+(402, 267, 'APC005', 1, 20000.00),
+(405, 269, 'APC005', 1, 20000.00),
+(407, 271, 'MPC009', 1, 20000.00),
+(410, 273, 'BPC003', 1, 15000.00);
 
 -- --------------------------------------------------------
 
@@ -90,10 +86,13 @@ CREATE TABLE `penjualan` (
 --
 
 INSERT INTO `penjualan` (`penjualan_id`, `tanggal_penjualan`, `total_harga`, `pelanggan_id`, `petugas_id`) VALUES
-(255, '2024-04-14', 0.00, 111, 0),
-(256, '2024-04-14', 0.00, 111, 0),
-(257, '2024-04-14', 0.00, 111, 0),
-(258, '2024-04-14', 180000.00, 111, 0);
+(267, '2024-04-19', 45000.00, 116, 0),
+(268, '2024-04-19', 5000.00, 111, 0),
+(269, '2024-04-19', 20000.00, 116, 0),
+(270, '2024-04-19', 10000.00, 111, 0),
+(271, '2024-04-19', 20000.00, 111, 0),
+(272, '2024-04-19', 5000.00, 111, 0),
+(273, '2024-04-22', 20000.00, 111, 0);
 
 -- --------------------------------------------------------
 
@@ -118,7 +117,7 @@ INSERT INTO `petugas` (`petugas_id`, `nama_petugas`, `username`, `password`, `no
 (555, 'afifah', 'puteri', '123', '0897654321', 'admin'),
 (666, 'rell', 'reli', '123', '0897654321', 'admin'),
 (667, 'agustina', 'gustin', '123', '0891234124', 'petugas'),
-(668, 'hiban', 'iban', '234', '0812341441', 'admin'),
+(668, 'hiban', 'iban', '234', '0812341441', 'petugas'),
 (669, 'fadhila', 'fadhila', '345', '0893024324', 'petugas'),
 (670, 'zalianti', 'zalianti', '345', '0823452124', 'petugas');
 
@@ -141,16 +140,16 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`produk_id`, `kode`, `nama_produk`, `harga`, `stok`) VALUES
-(444, 'CPC001', 'Cincin', 5000.00, -2),
-(447, 'GPC002', 'Gelang', 10000.00, 50),
-(448, 'BPC003', 'Bando', 15000.00, 29),
+(444, 'CPC001', 'Cincin', 5000.00, -7),
+(447, 'GPC002', 'Gelang', 10000.00, 45),
+(448, 'BPC003', 'Bando', 15000.00, 28),
 (449, 'JTPC004', 'Jam Tangan', 50000.00, 10),
-(450, 'APC005', 'Anting', 20000.00, 18),
+(450, 'APC005', 'Anting', 20000.00, 16),
 (451, 'KPC006', 'Kacamata', 60000.00, 29),
-(452, 'JPC007', 'Jedai', 15000.00, 50),
+(452, 'JPC007', 'Jedai', 15000.00, 48),
 (453, 'GKPC008', 'Gantungan Kunci', 15000.00, 39),
-(454, 'MPC009', 'Mahkota', 20000.00, 19),
-(455, 'TPC010', 'Topi', 20000.00, 47),
+(454, 'MPC009', 'Mahkota', 20000.00, 17),
+(455, 'TPC010', 'Topi', 20000.00, 45),
 (456, 'PSPC011', 'Phone Strap', 15000.00, 20);
 
 --
@@ -198,19 +197,19 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `detail_penjualan`
 --
 ALTER TABLE `detail_penjualan`
-  MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=396;
+  MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=413;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `pelanggan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `pelanggan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  MODIFY `penjualan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=259;
+  MODIFY `penjualan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
 
 --
 -- AUTO_INCREMENT for table `petugas`

@@ -113,9 +113,9 @@ button:hover{
 
 			<div class="login">
 				<form action="" method="POST">
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
+					<label for="chk" aria-hidden="true">Masuk</label>
+					<input type="text" name="user" placeholder="Nama Pengguna">
+					<input type="password" name="pass" placeholder="Kata Sandi">
 					<button class="btn-kirim" type="submit" name="submit">Masuk</button>
 				</form>
 		<?php
